@@ -126,7 +126,7 @@ exports.getMyFavourites = async (req, res, next) => {
   const tourIDs = favourite.map((el) => el.tour);
   const tours = await Tour.find({ _id: { $in: tourIDs } });
 
-  console.log(favourite);
+  // console.log(favourite);
 
   res.status(200).render('overview', {
     title: 'My Favourites',

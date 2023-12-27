@@ -36,7 +36,7 @@ export const displayMap = (locations) => {
   locations.forEach((location) => {
     const [lat, lng] = location.coordinates;
     const point = [lng, lat];
-    console.log(point, [lat, lng]);
+    // console.log(point, [lat, lng]);
     markers.push(point);
     L.marker(point, {
       icon: L.icon({ iconUrl: '/img/pin.png', iconSize: [20, 24] }),

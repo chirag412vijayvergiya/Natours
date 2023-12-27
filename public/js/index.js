@@ -106,7 +106,7 @@ if (favouriteBtn) {
   favouriteBtn.addEventListener('click', (e) => {
     //console.log(user);
     const { tourId } = e.target.dataset;
-    console.log(tourId);
+    // console.log(tourId);
     createFavourite(tourId);
   });
 }

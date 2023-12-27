@@ -30,10 +30,10 @@ export const updateSettings = async (data, type) => {
     const url = type === 'password' ? 'updateMyPassword' : 'updateMe';
     const res = await axios({
       method: 'PATCH',
-      url: `http://127.0.0.1:8000/api/v1/users/${url}`,
+      url: `/api/v1/users/${url}`,
       data,
     });
-    console.log(url);
+    // console.log(url);
     if (res.data.status === 'success') {
       showAlert('success', `${type.toUpperCase()} updated successfully!`);
       window.setTimeout(() => {

@@ -20,7 +20,7 @@ export const signup = async (name, email, password, confirmpassword) => {
       }, 1000);
     }
   } catch (err) {
-    // console.log(err);
+    console.log(err);
     // console.log(err.response.data);
     // console.log(err.response.status);
     // console.log(err.response.headers);

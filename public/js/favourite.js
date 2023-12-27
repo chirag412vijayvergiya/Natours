@@ -5,7 +5,7 @@ export const createFavourite = async (tourId) => {
   try {
     const res = await axios({
       method: 'POST',
-      url: 'http://127.0.0.1:8000/api/v1/favourite',
+      url: '/api/v1/favourite',
       data: {
         tour: tourId,
       },

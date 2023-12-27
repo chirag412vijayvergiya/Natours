@@ -37,7 +37,7 @@ const importData = async () => {
     console.log('Data successfully loaded');
     process.exit();
   } catch (err) {
-    console.log(err);
+    // console.log(err);
   }
 };
 
@@ -48,10 +48,10 @@ const deleteData = async () => {
     await User.deleteMany();
     //await Review.deleteMany();
 
-    console.log('Data successfully deleted');
+    // console.log('Data successfully deleted');
     process.exit();
   } catch (err) {
-    console.log(err);
+    // console.log(err);
   }
 };
 if (process.argv[2] === '--import') {
@@ -59,4 +59,4 @@ if (process.argv[2] === '--import') {
 } else if (process.argv[2] === '--delete') {
   deleteData();
 }
-console.log(process.argv);
+// console.log(process.argv);
