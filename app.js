@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
@@ -17,6 +16,7 @@ const viewRouter = require('./Routes/viewRoute');
 const bookingRouter = require('./Routes/bookingRoute');
 const FavouriteRouter = require('./Routes/FavouriteRoute');
 
+//Start express app
 const app = express();
 
 app.set('view engine', 'pug');
